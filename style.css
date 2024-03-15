@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto",sans-serif;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+nav{
+    box-shadow: inset;
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background: whitesmoke;
+    z-index: 50;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo_image{
+    font-size: 50px;
+}
+.Hero{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tag{
+    background-color: #149f39;
+    padding: 5px 10px;
+    color: white;
+    align-self: flex-start;
+}
+.hero_content h1{
+    font-size: 52px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.exlpore_button{
+    background: #ffc066;
+    align-self: flex-start;
+}
+.features{
+    margin-top: 70px;
+    display: flex;
+    gap: 300px;
+}
+.divider{
+    border: 1px solid black;
+    margin: 20px 0;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+}
+.menu.tag{
+    flex-direction: column;
+}
+.grid-image{
+    border-radius: 5PX;
+    transition: 0.2s ease-in-out;
+    justify-content: center;
+    
+}
+.grid-image:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+.grid{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    "I2 I3"
+    "I1 I4";
+}
+.item1{
+    grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+    grid-area: I4;
+}
+footer{
+    background-color: aquamarine;
+}
+.footer_container{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link_list ul{
+    list-style: none;
+
+}
+.link_lists ul{
+    list-style: none;
+}
+
+.link_list ul li{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.link_lists ul li{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+
+@media (max-width:700px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero_image{
+        width: 0%;
+    }
+    .hero_content{
+        gap: 10px;
+        padding: 10px;
+    }  
+}
